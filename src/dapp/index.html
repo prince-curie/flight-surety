@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="row top-20">
+            <label class="form">Flight</label> <input type="text" id="flight-number"> <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        </div>
+        <br>
+        <div >
+            <br>
+            <h3 class="text-center"> Flights Available </h3>
+            <br>
+            <div class="top-20 row justify-content-center">
+                <div class="card" style="width: 18rem; margin: 1rem;">
+                    <img class="card-img-top" src="./emanuel-alexandru-AKYjr-kmYtQ-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <form>
+                            <h5 class="card-title" style="color: black" id="flight">Flight no: <span>0912321</span></h5>
+                            <p class="card-text" style="color: black">Departure: 21-06-2021 11 : 55 am </p>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <input type="number" id="value" step="0.00000000001" max="1" min="0" placeholder="Amount" class='form-control col'>
+                                    <input type="text" id="flightKey" class='form-control col' style="display: none">
+                                    <br>
+                                </div>
+                                <button type="submit" id="buyInsurance" class="btn btn-primary">Buy Surety</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem; margin: 1rem;">
+                    <img class="card-img-top" src="./emanuel-alexandru-AKYjr-kmYtQ-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <form>
+                            <h5 class="card-title" style="color: black" id="flight">Flight no: <span>0915521</span></h5>
+                            <p class="card-text" style="color: black">Departure: 01-07-2021 01 : 55 am</p>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <input type="number" id="value" step="0.00000000001" max="1" min="0" placeholder="Amount" class='form-control col'>
+                                    <input type="text" id="flightKey" class='form-control col' style="display: none">
+                                    <br>
+                                </div>
+                                <button type="submit" id="buyInsurance" class="btn btn-primary">Buy Surety</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="top-20 row justify-content-center">
+            <button id="withdrawPayment"  type="button" class="btn btn-success">Withdraw</button>
+        </div>
+        
+    </main>
+
+</body>
+
+</html>
